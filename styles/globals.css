@@ -142,27 +142,7 @@ select {
   display: grid;
 }
 
-/* .loader{
-  border:5px solid rgb(85, 159, 209);
-  border-top: 5px solid rgb(156, 215, 250);
-  border-radius:50%;
-  width:150px;
-  height:150px;
-  animation:spin 0.8s linear infinite;
-  margin:25vh auto;
-  transition: none;
-} */
 
-/* @keyframes spin{
-0%{
-    transform: rotate(0deg);
-}
-100%{
-    transform:rotate(360deg)
-}
-} */
-
-/* //////////////////////////////////////////////// */
 ::-webkit-scrollbar {
   display: none;
 }
@@ -208,13 +188,24 @@ body {
   opacity: 0;
 }
 
-
+h1,
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+}
 
 /* font-family: 'Cormorant Garamond', serif;
 
 font-family: 'PT Mono', monospace; */
 
 
+
+
+
+/* really specific */
+
+.mt-22{
+  margin-top:  22px ;
+}
 
 
 
