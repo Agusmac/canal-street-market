@@ -22,16 +22,24 @@
     line-height: 1.25;
     letter-spacing: -2px;
 }
+
+.main-third-title{
+    font-size: 115px;
+    max-width: 645px;
+    line-height: 0.85;
+    letter-spacing: -4px;
+    text-align: center;
+}
+
+
 .main-grid{
-    min-height: 100px;
-    /* outline: 1px solid; */
     gap: 60px;
 }
 
 .main-grid div{
     flex: 1;
-    /* outline: 1px solid; */
 }
+
 .main-grid p{
     font-size: 14px;
     letter-spacing: 0.3px;
