@@ -27,25 +27,27 @@
     /* min-width:auto */
 }
 
-h1,h2{
+h1,
+h2 {
     font-family: 'Cormorant Garamond', serif;
-  }
+}
 
-.new-kind{
-    font-size: 113px;
+.new-kind {
+    font-size: 125px;
     max-width: 645px;
+    line-height: 1.25;
+    letter-spacing: -2px;
 }
 
 
 
 
-.fix{
-   width: calc(100vw - 180px);
+.fix {
+    width: calc(100vw - 180px);
 }
 
 @media (max-width:1200px) {
-    .fix{
+    .fix {
         width: 100%
-     }
-  }
-
+    }
+}
