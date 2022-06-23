@@ -35,7 +35,23 @@
     padding-top: 76px;
     position: sticky;
     top: 0;
+    font-weight: 600;
+    /* font-weight: 700; */
+    position: relative;
 }
+
+.rotatedletter{
+    transform: rotate(90deg);
+    margin-top: calc(50vh - 100px);
+    text-align: center;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transform: translateY(-50%) translateX(-50%) rotate(90deg); */
+}
+
+
 
 
 @media (max-width:1200px) {

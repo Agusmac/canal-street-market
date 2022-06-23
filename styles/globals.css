@@ -148,9 +148,6 @@ select {
   transition: ease-in-out 0.5s;
 }
 
-.fullwidth {
-  width: calc(100% - 180px) !important;
-}
 
 .px-60 {
   padding-left: 60px;
@@ -166,12 +163,23 @@ select {
 
 body {
   overflow: hidden;
+  font-family: 'PT Mono', monospace;
   /* Hide scrollbars */
 }
 
+.fullwidth {
+  width: calc(100% - 180px) !important;
+}
 
+/* ??????????????????? which one was for which ? */
+/* 
 .fullwidth {
   width: 100% !important;
+} */
+@media (max-width:1200px) {
+  .fullwidth {
+    width: 100% !important;
+  }
 }
 
 
@@ -179,3 +187,51 @@ body {
   /* white-space: pre-wrap; */
   opacity: 0;
 }
+
+
+
+/* font-family: 'Cormorant Garamond', serif;
+
+font-family: 'PT Mono', monospace; */
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+	Store your @font-face in here
+-------------------------------------------------- */
+/* 
+@font-face {
+  font-family: 'ogg';
+  src: url('./Ogg-Roman.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+h1{
+  font-family: 'ogg' ,sans-serif; 
+} */
+
+/* 
+@font-face {
+  font-family: 'apercu';
+  src: url('../fonts/Apercu_Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'apercu mono';
+  src: url('../fonts/apercu-mono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+

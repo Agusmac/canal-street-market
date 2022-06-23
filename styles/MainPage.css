@@ -8,18 +8,38 @@
 .main-title-div {
     transition: 0.5s;
     /* transition: 0.15s; */
-    width: 70vw;
+    /* display:flex;
+    flex-shrink: 0; */
+    /* width: 70vw; */
     max-width: 1030px;
-    margin: 60px;
-    white-space: pre-line;
-    overflow: hidden;
+    margin: 120px 60px;
+    /* white-space: pre-line; */
+    /* overflow: hidden; */
 }
 
 .main-title-div {
     overflow: hidden;
-    font-family: ogg, sans-serif;
-    font-size: 35px;
+    font-size: 40px;
     /* font-size: 75px; */
     line-height: 86px;
-    letter-spacing: 0;
+    /* letter-spacing: 1px; */
+    font-weight: 300;
+    /* min-width:auto */
 }
+
+h1{
+    font-family: 'Cormorant Garamond', serif;
+
+  }
+
+
+.fix{
+   width: calc(100vw - 180px);
+}
+
+@media (max-width:1200px) {
+    .fix{
+        width: 100%
+     }
+  }
+
