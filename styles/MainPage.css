@@ -27,10 +27,16 @@
     /* min-width:auto */
 }
 
-h1{
+h1,h2{
     font-family: 'Cormorant Garamond', serif;
-
   }
+
+.new-kind{
+    font-size: 113px;
+    max-width: 645px;
+}
+
+
 
 
 .fix{
