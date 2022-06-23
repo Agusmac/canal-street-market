@@ -1,0 +1,25 @@
+.MainDiv {
+    width: 60px;
+    /* background-color: bisque; */
+    min-height: 5000px;
+    transition: 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) !important;
+}
+
+.main-title-div {
+    transition: 0.5s;
+    /* transition: 0.15s; */
+    width: 70vw;
+    max-width: 1030px;
+    margin: 60px;
+    white-space: pre-line;
+    overflow: hidden;
+}
+
+.main-title-div {
+    overflow: hidden;
+    font-family: ogg, sans-serif;
+    font-size: 35px;
+    /* font-size: 75px; */
+    line-height: 86px;
+    letter-spacing: 0;
+}
