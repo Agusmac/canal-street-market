@@ -3,6 +3,7 @@ import '../styles/Sidebar.css'
 import '../styles/MainPage.css'
 import '../styles/Navbar.css'
 import '../styles/Animation.css'
+import '../components/Footer/Footer.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

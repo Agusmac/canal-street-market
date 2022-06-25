@@ -11,6 +11,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 figure,
 blockquote,
@@ -58,10 +59,6 @@ select {
 }
 
 
-
-
-
-
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -78,18 +75,22 @@ select {
   }
 }
 
-
 /*------------------------------------------*/
-
 
 .textcenter {
   text-align: center;
 }
 
-.my-60{
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-60 {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+
 .mx-60 {
   margin-left: 60px;
   margin-right: 60px;
@@ -118,9 +119,12 @@ select {
   margin-bottom: 120px;
 }
 
-
 .mt-120 {
   margin-top: 120px;
+}
+
+.mb-90 {
+  margin-bottom: 90px;
 }
 
 .mb-180 {
@@ -143,6 +147,16 @@ select {
 .mt-50 {
   margin-top: 50px;
 }
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+
 
 .flex {
   display: flex;
@@ -197,14 +211,23 @@ body {
   }
 }
 
+@media (max-width:1000px) {
+  .none-1000px {
+    display: none;
+  }
+}
+
+
+
 
 .op-0 {
-  /* white-space: pre-wrap; */
   opacity: 0;
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -217,6 +240,34 @@ font-family: 'PT Mono', monospace; */
 
 
 /* really specific */
+
+.display-small {
+  display: none;
+}
+
+
+
+.mx-60-var {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+@media (max-width:760px) {
+  .mx-60-var {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .display-small {
+    display: unset;
+  }
+
+  .none-760px {
+    display: none;
+  }
+
+}
+
 
 .mt-22 {
   margin-top: 22px;

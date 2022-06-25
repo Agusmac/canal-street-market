@@ -12,7 +12,7 @@ export default function Navbar({ fullWidth }) {
 
 
     return (
-        <div className={`navbar flex between ${fullWidth == 'main' ? 'px-60' : ' px-5'}`} >
+        <div className={`navbar flex between ${fullWidth == 'main' ? 'mx-60-var' : ' px-5'}`} >
             <div className='img-div'><Image src='/image.svg' height={60} width={60} quality={100} /></div>
 
            
