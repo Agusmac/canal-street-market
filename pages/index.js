@@ -2,14 +2,21 @@ import React, { useState } from 'react'
 import MainPage from '../components/MainPage'
 import Sidebar from '../components/Sidebar'
 
+import Head from 'next/head'
+
 
 export default function Home() {
 
   const [fullWidth, setfullWidth] = useState('main')
 
-  return (
-    <div >
 
+  return (
+      <>
+        <Head>
+          <title>Canal-Street-Market | Agustin</title>
+          <meta name='description' content="This site was made by Agustin Mac Rae-Frontend Developer" />
+      </Head>
+    <div >
       <div className="flex">
         <MainPage fullWidth={fullWidth} setfullWidth={setfullWidth} />
         <Sidebar fullWidth={fullWidth} setfullWidth={setfullWidth}/>
@@ -18,9 +25,8 @@ export default function Home() {
         <div onClick={() => setfullWidth('red')} className={`red sidelinks  slide-in-top ${fullWidth == 'red' ? 'fullwidth' : ''}`}><div>購物</div></div>
         <div  onClick={() => setfullWidth('yellow')} className={`yellow sidelinks  slide-in-top ${fullWidth == 'yellow' ? 'fullwidth' : ''}`}><div>文化</div></div> */}
       </div>
-
-
     </div>
+    </>
   )
 }
 

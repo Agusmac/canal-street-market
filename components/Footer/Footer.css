@@ -50,12 +50,15 @@
 
 
 
-.email-div-email div:nth-child(2){
+.email-div-email div:nth-child(2), .copyright-Name{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
-
+.copyright-div p{
+ font-size: 13px;
+ font-weight: 600;
+}
 
 
 @media (max-width:760px) {
@@ -68,12 +71,14 @@
         letter-spacing: 0px;
         line-height: 1;
     }
-    .email-div{
+    .email-div, .copyright-div div ,.copyright-div{
         gap: 13px;
     }
     .email-div, .soc-media-div{
         padding: 30px;
     }
-
+    .soc-media-main-div{
+        gap: 30px;
+    }
 
 }

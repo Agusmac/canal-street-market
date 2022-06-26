@@ -1,23 +1,29 @@
 
 import React, { useEffect, useState } from 'react'
 
+
+const sideArray = ['.yellow', '.red', '.blue']
+
 export default function Sidebar({ fullWidth, setfullWidth }) {
 
-    const sideArray = ['.yellow', '.red', '.blue',]
 
     const [test, settest] = useState(0)
 
     const [fullSide, setFullSide] = useState(false)
 
+    const increase = () => {
+        console.log(test)
+        settest(prev => prev + 1);
+      };
+     
     useEffect(() => {
         // const boxes = document.querySelectorAll('.sidelinks');
-
-
 
         let timer = 100
         sideArray.map(i => {
             setTimeout(() => {
-                settest(prev => prev + 1)
+                increase()
+                
                 // document.querySelector(item).classList.add("slide-in-top-final")
                 // document.querySelector(item).classList.remove("slide-in-top")
             }, timer);
@@ -26,14 +32,14 @@ export default function Sidebar({ fullWidth, setfullWidth }) {
         setTimeout(() => {
             setFullSide(true)
             document.body.style.overflow = "scroll";
-            // for (const box of boxes) {
-            //     box.classList.add('fullHeightSidebar');
-            // }
+
         }, 1200);
 
 
 
     }, [])
+
+    
 
 
 

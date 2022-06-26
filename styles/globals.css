@@ -41,6 +41,8 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Make images easier to work with */
@@ -229,6 +231,7 @@ h2,
 h3,
 h4 {
   font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
 }
 
 /* font-family: 'Cormorant Garamond', serif;
@@ -258,6 +261,36 @@ font-family: 'PT Mono', monospace; */
     margin-right: 30px;
   }
 
+  .mb-90-sm {
+    margin-bottom: 90px;
+  }
+
+  .mb-60-sm {
+    margin-bottom: 60px;
+  }
+
+  .mb-30-sm {
+    margin-bottom: 30px;
+  }
+
+  .gap-30-sm {
+    gap: 30px !important;
+  }
+
+  .gap-15-sm {
+    gap: 30px;
+  }
+
+  .w-60-sm {
+    width: 60px;
+  }
+
+  .h-60-sm {
+    height: 60px;
+  }
+  .mt-50-sm{
+    margin-top: 50px;
+  }
   .display-small {
     display: unset;
   }
