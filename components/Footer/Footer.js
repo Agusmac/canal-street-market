@@ -62,7 +62,7 @@ const Footer = ({ secFoot }) => {
       </div>
 
       <div className='flex main-grid copyright-div mt-50-sm'>
-        <div className='flex main-grid'>
+        <div className='flex main-grid text-left'>
           <p>Copyright Canal Street Market 2019</p>
           <p>Privacy Policy</p>
           <p>Vendor Login</p>

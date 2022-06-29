@@ -2,7 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 
 
-const SecondaryPageHero = ({ color }) => {
+const SecondaryPageHero = ({ color, img, title, jpletters }) => {
+
+
     return (
         <>
 
@@ -20,11 +22,11 @@ const SecondaryPageHero = ({ color }) => {
                 </div>
             </div>
             <div className="flex sdsh text-left">
-                <div><h1>The Food Hall</h1></div>
+                <div><h1>{title}</h1></div>
                 <div>
-                    <h2 className='text-right z-i-1'>餐饮</h2>
+                    <h2 className='text-right z-i-1'>{jpletters}</h2>
                     <div>
-                        <Image src='/images/home_page_three.avif' alt='Food-market' height={506} quality={100} width={374} />
+                        <Image src={`/images/${img}`} alt='Food-market' height={506} quality={100} width={374} />
                     </div>
                 </div>
             </div>
