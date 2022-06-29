@@ -94,24 +94,41 @@
     font-size: 120px;
     line-height: 1;
 }
+
 .happy-hour p {
     font-size: 16px;
 }
 
-.emoji-face span{
+.emoji-face span {
     animation: 1s infinite alternate d;
     animation-timing-function: ease-in-out;
 }
+
 @media (max-width:1200px) {
     .menuGrid {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .sdsh h1 {
-        font-size:100px;
+        font-size: 100px;
         line-height: 0.85;
     }
 }
 
 @media (max-width:760px) {
-  
+    .sdsh {
+        flex-direction: column;
+    }
+
+    .fdsh p {
+        font-size: 14px;
+    }
+
+    .rotated-hero-div {
+        display: none;
+    }
+    .sdsh h1 {
+        font-size: 80px;
+        line-height: 0.85;
+    }
 }
