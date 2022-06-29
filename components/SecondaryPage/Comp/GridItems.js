@@ -26,7 +26,7 @@ const GridItems = ({ name, description, img, w, h, folder }) => {
                 style={{ marginTop: `${(random * 1.6) - 225}px`, marginLeft: random, }}>
                 <Image src={`/images/${folder}/${img}`} alt={name} quality={100} height={h} width={w} />
             </div>
-            <div className={`display-md ${img=='Boba.png' && 'md-mw-22vw'}`}>
+            <div className={`display-md ${img=='boba.png' && 'md-mw-22vw'}`}>
                 <Image src={`/images/${folder}/${img}`} alt={name} quality={100} height={h} width={w} />
             </div>
         </div>
