@@ -1,10 +1,13 @@
 .navbar{
-    z-index: 1;
+    z-index: 10;
     padding-top: 60px;
     position: sticky;
     top: 0;
 }
-.wobble-ver-right {
+/* .burguer{
+    z-index: 1000;
+} */
+.wobble-ver-right { 
     -webkit-animation: wobble-ver-right 0.8s both;
     animation: wobble-ver-right 0.8s both;
 }

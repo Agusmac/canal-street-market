@@ -29,3 +29,7 @@
 .hover-pointed-anim:hover{
     animation-play-state: running;
 }
+
+
+@keyframes e{0%{background-position:0 101%,0 101%,0 0,0 0}to{background-position:93px 101%,93px 101%,100px 0,100px 0}}
+@keyframes d{0%{transform:translateY(10%)}to{transform:translateY(-10%)}}

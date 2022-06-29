@@ -4,7 +4,8 @@ import '../styles/MainPage.css'
 import '../styles/Navbar.css'
 import '../styles/Animation.css'
 import '../components/Footer/Footer.css'
-
+import '../components/SecondaryPage/SecondaryPage.css'
+import '../components/Modal/Modal.css'
 import Head from 'next/head'
   
 

@@ -2,9 +2,11 @@ import Image from 'next/image'
 import React from 'react'
 
 
-const Footer = () => {
+const Footer = ({ secFoot }) => {
+
+
   return (
-    <div className='mx-60-var mt-60 mb-60 '>
+    <div className={`mt-60 mb-60 fade-in ${secFoot ? "" : 'mx-60-var'}`}>
       <div className="textcenter vendor">
         <div className='vendor-div'>
           <h4>Interested in becoming a vendor?</h4>
@@ -67,7 +69,7 @@ const Footer = () => {
         </div>
         <div className='flex copyright-Name'>
           <p>
-          <a href="https://www.linkedin.com/in/agustin-mac-rae-3348ab216/">Site by Agustin Mac Rae</a>
+            <a href="https://www.linkedin.com/in/agustin-mac-rae-3348ab216/">Site by Agustin Mac Rae</a>
           </p>
         </div>
       </div>

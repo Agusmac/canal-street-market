@@ -1,0 +1,117 @@
+.Secondary-page {
+    opacity: 0;
+}
+
+.fdsh {
+    position: relative;
+}
+
+.rotated-hero-div {
+    transform: rotate(90deg);
+    opacity: 0.3;
+    font-weight: 600;
+    font-size: 18px;
+    position: absolute;
+    top: 17px;
+    left: -25px;
+}
+
+
+.sdsh h1 {
+    font-size: 230px;
+    line-height: 0.85;
+}
+
+.sdsh h2 {
+    font-size: 65px;
+    /* top: -12px;
+    left: -3px; */
+}
+
+.sdsh div:nth-child(1) {
+    flex: 2 1;
+}
+
+.sdsh div:nth-child(2) {
+    flex: 1 1;
+    /* position: relative;
+    top: -60px; */
+    /* background-color: aqua; */
+}
+
+.sdsh div div {
+    position: relative;
+    top: -50px;
+    left: -15%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.menuGrid {
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px 60px;
+}
+
+.menuGrid p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    z-index: 10;
+}
+
+.menuGrid h5 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 500;
+    z-index: 10;
+}
+
+.random-img-div {
+    position: absolute;
+    transition: unset;
+    width: 26vw;
+    height: 26vw;
+    transition: opacity 1s;
+    z-index: -1;
+}
+
+
+.happy-hour {
+    padding: 110px 0;
+    /* margin-bottom: 120px; */
+    background-image: repeating-linear-gradient(-45deg, #000, #000 1px, transparent 0, transparent 68px), repeating-linear-gradient(45deg, #000, #000 1px, transparent 0, transparent 68px), repeating-linear-gradient(-45deg, #000, #000 1px, transparent 0, transparent 71px), repeating-linear-gradient(45deg, #000, #000 1px, transparent 0, transparent 70px);
+    background-position: 0 101%, 0 101%, 0 0, 0 0;
+    background-size: 93px 50px, 93px 50px, 100px 50px, 100px 50px;
+    background-repeat: repeat-x;
+    animation: 2s infinite normal e;
+    animation-timing-function: linear;
+}
+
+.happy-hour h2 {
+    font-size: 120px;
+    line-height: 1;
+}
+.happy-hour p {
+    font-size: 16px;
+}
+
+.emoji-face span{
+    animation: 1s infinite alternate d;
+    animation-timing-function: ease-in-out;
+}
+@media (max-width:1200px) {
+    .menuGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sdsh h1 {
+        font-size:100px;
+        line-height: 0.85;
+    }
+}
+
+@media (max-width:760px) {
+  
+}

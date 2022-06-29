@@ -1,18 +1,32 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from './Footer/Footer'
 import Navbar from './Navbar'
 
 
 
 
-const MainPage = ({ fullWidth, setfullWidth }) => {
+const MainPage = ({ fullWidth, setfullWidth,setOpenModal}) => {
+
+  const [mainDisplay, setMainDisplay] = useState(true)
+
+  useEffect(() => {
+    if (fullWidth != 'main') {
+      setTimeout(() => {
+        setMainDisplay(false)
+      }, 700);
+    } else {
+      setMainDisplay(true)
+    }
+  }, [fullWidth])
+
+
 
   return (
-    <div onClick={() => setfullWidth('main')} className={`MainDiv ${fullWidth == 'main' ? 'fullwidth' : ''}`}>
-      <Navbar fullWidth={fullWidth} />
+    <div onClick={() => setfullWidth('main')} className={`MainDiv ${fullWidth == 'main' ? 'fullwidth' : 'total-no-display-md'}`}>
+      <Navbar fullWidth={fullWidth} setOpenModal={setOpenModal}  />
 
-      <div className={`fix ${fullWidth != 'main' && 'op-0'}`}>
+      <div className={`fix  ${fullWidth != 'main' && 'op-0 '}${!mainDisplay && 'total-no-display'}`}>
         {/*  */}
         <div className={`main-title-div mx-60-var fade-in  `}>
           <h1> Canal Street Market is a carefully
@@ -31,7 +45,7 @@ const MainPage = ({ fullWidth, setfullWidth }) => {
           <h2 className={`main-second-title mx-60-var mb-60 fade-in`}>A New Kind of Market</h2>
         </div>
 
-        <div className="main-grid flex mx-60-var mb-180 mb-90-sm">
+        <div className="main-grid flex fade-in mx-60-var mb-180 mb-90-sm">
           <div>
             <Image className='mb-30' src='/images/home_page_one.avif' alt='window' height={920} quality={100} width={680} />
             <p className='mt-22'>
@@ -54,7 +68,7 @@ const MainPage = ({ fullWidth, setfullWidth }) => {
         </div>
         {/*  */}
 
-        <div className='mx-60-var'>
+        <div className='mx-60-var fade-in bg-white'>
 
           <div className='main-grid flex mb-60 mb-30-sm gap-30-sm'>
             <div className='grid-center-content'>
@@ -70,7 +84,7 @@ const MainPage = ({ fullWidth, setfullWidth }) => {
             </div>
           </div>
 
-          <div className='main-grid flex  textcenter sideline-animation'>
+          <div className='main-grid flex textcenter sideline-animation'>
             <div className='side-anim-sm'>
               <p className='mb-15 date'>10/22</p>
               <p>Small Business Retail Pop Up Weekend!</p>
@@ -86,7 +100,7 @@ const MainPage = ({ fullWidth, setfullWidth }) => {
             </div>
           </div>
 
-          <div className='white-button textcenter mx-auto mb-90 mb-60-sm'>
+          <div className='white-button textcenter mx-auto mb-90 mb-60-sm' style={{ backgroundColor: "white" }}>
             see all
           </div>
 

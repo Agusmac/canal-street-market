@@ -1,7 +1,7 @@
 .MainDiv {
     width: 60px;
     /* background-color: bisque; */
-    min-height: 5000px;
+    /* min-height: 5000px; */
     transition: 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) !important;
 }
 
@@ -102,7 +102,8 @@
 .white-button {
     padding: 20px;
     width: 180px;
-    background-color: white;
+    font-size: 16px;
+    background-color: inherit;
     border: 1px solid black;
     position: relative;
     top: -40px;
@@ -110,7 +111,7 @@
 }
 
 .white-button:hover {
-    background-color: black;
+    background-color: black !important;
     color: white;
 }
 
