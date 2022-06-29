@@ -8,15 +8,15 @@ export const foodDataArray = {
     folder: 'menu-images',
     menuArray: [
         { name: 'Azumma', description: 'Korean Meets Mexican', img: 'Azumma.png', w: 993, h: 739 },
-        { name: 'Boba Guys', description: 'Next Level Boba Milk Tea', img: 'Boba.png', w: 221, h: 497 },
-        { name: 'Domi', description: 'Artisanal Bakery', img: 'Domi.png', w: 650, h: 640 },
+        { name: 'Boba Guys', description: 'Next Level Boba Milk Tea', img: 'boba.png', w: 221, h: 497 },
+        { name: 'Domi', description: 'Artisanal Bakery', img: 'bomi.png', w: 650, h: 640 },
         { name: 'Izakaya Samurice', description: 'Japanese Kitchen', img: 'Bento.png', w: 500, h: 410 },
         { name: "Joe's Steam Rice Roll", description: 'Cantonese Steamed Rice Rolls', img: 'rice-roll.png', w: 500, h: 472 },
         { name: 'Kuro-Obi', description: 'Ramen by Ippudo', img: 'ramen.png', w: 500, h: 494 },
         { name: 'Mission Ceviche', description: 'New Peruvian Cuisine', img: 'mission.png', w: 1000, h: 1000 },
         { name: 'Office Coffee', description: 'Coffee, Pastries & Smoothies', img: 'Coffee.png', w: 1000, h: 961 },
         { name: 'Suki', description: 'Michelin Rated Katsu', img: 'Suki.png', w: 1326, h: 992 },
-        { name: 'fresh&co', description: 'Chef Inspired Salads', img: 'fresh.png', w: 945, h: 992 },
+        { name: 'fresh&co', description: 'Chef Inspired Salads', img: 'Fresh.png', w: 945, h: 992 },
         { name: 'ilili BOX', description: 'Inspired Mediterranean', img: 'wrap.png', w: 994, h: 637 },
     ]
 }
