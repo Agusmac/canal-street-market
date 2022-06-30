@@ -9,7 +9,7 @@ import Navbar from '../Navbar'
 
 const SecondaryPage = ({ fullWidth, color, setOpenModal, data }) => {
 
-  console.log(data);
+  // console.log(data);
 
   try { document.getElementById(`secondary-page`).scrollIntoView({ behavior: "smooth", block: "start" }) } catch (error) { console.log("failed") }
 

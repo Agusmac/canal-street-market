@@ -18,8 +18,10 @@
 
 
 .sdsh h1 {
-    font-size: 230px;
+    font-size: 250px;
     line-height: 0.85;
+    letter-spacing: -5px;
+    padding-top: 50px;
 }
 
 .sdsh h2 {
@@ -101,16 +103,47 @@
     font-size: 16px;
 }
 
+.float-head:last-child{
+    animation-delay: .5s;
+}
+.float-head:last-child span{
+    transform: rotateY(180deg);
+}
+.float-head{
+    animation: 1s infinite alternate d;
+    animation-timing-function: ease-in-out;
+}
+
 .emoji-face span {
     animation: 1s infinite alternate d;
     animation-timing-function: ease-in-out;
 }
+ /* @media (max-width:1800px) {
+    .xl-title-fix h1{
+        font-size: 140px;
+        line-height: 0.85;
+    }
+} */
+
+
+.no-display-to-flex{
+    display: none !important;
+}
+
+ @media (max-width:1500px) {
+    .xl-title-fix h1{
+        font-size: 150px;
+        line-height: 0.85;
+    }
+} 
 
 @media (max-width:1200px) {
     .menuGrid {
         grid-template-columns: repeat(1, 1fr);
     }
-
+    .text-right-sm{
+        text-align: right;
+    }
     .sdsh h1 {
         font-size: 100px;
         line-height: 0.85;
@@ -136,6 +169,9 @@
 }
 
 @media (max-width:760px) {
+    .no-display-to-flex{
+        display: flex !important;
+    }
     .sdsh {
         flex-direction: column;
     }
@@ -156,7 +192,7 @@
     .sdsh div div {
         top: -50px;
         left: 0;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .emoji-face {
@@ -179,3 +215,5 @@
         animation-timing-function: linear;
     }
 }
+
+

@@ -1,4 +1,5 @@
 export const foodDataArray = {
+    topText:['Food','Food Hall Hours:','Mon - Thurs: 11:00AM - 6:00PM','Fri - Sun: 11:00AM - 7:00PM'],
     title: 'The Food Hall',
     img: 'home_page_three.avif',
     jpletters: '餐饮',
@@ -6,6 +7,7 @@ export const foodDataArray = {
     happyP: 'Every Weekday, 5 - 7PM $4 Beer & $7 Wine Come Hang With Us! **** Tappy Tuesday Pay with Apple Pay and receive 20% off *Beer and Wine excluded*',
     happyImg: ['smile-emoji', 177, 180],
     folder: 'menu-images',
+
     menuArray: [
         { name: 'Azumma', description: 'Korean Meets Mexican', img: 'Azumma.png', w: 993, h: 739 },
         { name: 'Boba Guys', description: 'Next Level Boba Milk Tea', img: 'boba.png', w: 221, h: 497 },
@@ -21,6 +23,7 @@ export const foodDataArray = {
     ]
 }
 export const marketDataArray = {
+    topText:['Retail','Retail Market Hours:','Fri – Sun: 11:00AM - 7:00PM'],
     title: 'The Retail Market',
     img: 'home_page_two.avif',
     jpletters: '購物',
@@ -48,3 +51,17 @@ export const marketDataArray = {
         { name: 'Tissi', description: 'Jewelry', img: 'tissi.png', w: 451.5, h: 450.75 },
     ]
 }
+
+export const yellowDataArray = {
+    topText:['Community','Our mixed-use space hosts','ongoing events, podcasts',' & artists in residence'],
+    title: 'Canal St. Community',
+    img: 'home_page_one.avif',
+    jpletters: '文化',
+    happyTitle: "Market Radio",
+    happyP: 'Podcasted from the market',
+    happyImg: ['floating-head', 117, 140],
+}
+
+
+
+

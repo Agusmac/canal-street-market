@@ -229,7 +229,7 @@ body {
 } */
 
 .display-md {
-  display: none;
+  display: none !important;
 }
 .mt--100 {
   margin-top: -110px;
@@ -249,7 +249,7 @@ body {
   }
 
   .display-md {
-    display: unset;
+    display: unset !important;
   }
 
   .total-no-display-md {
@@ -305,12 +305,8 @@ font-family: 'PT Mono', monospace; */
 /* really specific */
 
 .display-small {
-  display: none;
+  display: none !important;
 }
-
-
-
-
 
 .mx-60-var {
   margin-left: 60px;
@@ -356,7 +352,7 @@ font-family: 'PT Mono', monospace; */
   }
 
   .display-small {
-    display: unset;
+    display: unset !important;
   }
 
   .none-760px {
