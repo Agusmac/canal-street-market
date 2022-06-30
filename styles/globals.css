@@ -387,3 +387,7 @@ font-family: 'PT Mono', monospace; */
 .total-display {
   display: unset !important;
 }
+
+.cursor-pointer{
+  cursor: pointer;
+}

@@ -23,7 +23,7 @@ const MainPage = ({ fullWidth, setfullWidth,setOpenModal}) => {
 
 
   return (
-    <div onClick={() => setfullWidth('main')} className={`MainDiv ${fullWidth == 'main' ? 'fullwidth' : 'total-no-display-md'}`}>
+    <div onClick={() => setfullWidth('main')} className={`MainDiv ${fullWidth == 'main' ? 'fullwidth' : 'total-no-display-md cursor-pointer'}`}>
       <Navbar fullWidth={fullWidth} setOpenModal={setOpenModal}  />
 
       <div className={`fix  ${fullWidth != 'main' && 'op-0 '}${!mainDisplay && 'total-no-display'}`}>

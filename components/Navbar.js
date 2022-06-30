@@ -12,7 +12,7 @@ export default function Navbar({ fullWidth, setOpenModal }) {
 
 
     return (
-        <div className={`navbar flex between ${fullWidth == 'main' ? 'mx-60-var' : 'px-5 mb-60'}`} >
+        <div className={`navbar flex between op-1 ${fullWidth == 'main' ? 'mx-60-var' : 'px-5 mb-60'}`} >
             <div className='img-div'><Image src='/image.svg' alt='Canal-Street-logo' height={60} width={60} quality={100} /></div>
 
 

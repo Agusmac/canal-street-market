@@ -46,7 +46,7 @@ export default function Sidebar({ fullWidth, setfullWidth,setOpenModal }) {
 
     return (
         <>
-            <div onClick={() => setfullWidth('blue')} className={`blue sidelinks  ${fullSide && 'fullHeightSidebar'} ${test < 3 ? 'slide-in-top' : 'slide-in-top-final'}  ${fullWidth == 'blue' ? 'fullwidth flex total-display' : ''}`}>
+            <div onClick={() => setfullWidth('blue')} className={`blue sidelinks ${fullSide && 'fullHeightSidebar'} ${test < 6 ? 'slide-in-top' : 'slide-in-top-final'}  ${fullWidth == 'blue' ? 'fullwidth flex total-display' : 'cursor-pointer'}`}>
                 <div className={`sideletters ${fullWidth == 'blue' && 'side-letter-gone '}`}>餐饮<div className="rotatedletter">Food</div></div>
              
                 {fullWidth == 'blue' && <SecondaryPage fullWidth={fullWidth} setOpenModal={setOpenModal} data={foodDataArray} color='blue' />}
@@ -59,13 +59,13 @@ export default function Sidebar({ fullWidth, setfullWidth,setOpenModal }) {
 
 
 
-            <div onClick={() => setfullWidth('red')} className={`red sidelinks ${fullSide && 'fullHeightSidebar'} ${test < 2 ? 'slide-in-top' : 'slide-in-top-final'} ${fullWidth == 'red' ? 'fullwidth flex total-display' : ''}`}>
+            <div onClick={() => setfullWidth('red')} className={`red sidelinks ${fullSide && 'fullHeightSidebar'} ${test < 3 ? 'slide-in-top' : 'slide-in-top-final'} ${fullWidth == 'red' ? 'fullwidth flex total-display' : 'cursor-pointer'}`}>
                 <div className={`sideletters ${fullWidth == 'red' && 'side-letter-gone'}`}>購物 <div className="rotatedletter">Retail</div></div>
                 {fullWidth == 'red' && <SecondaryPage fullWidth={fullWidth} setOpenModal={setOpenModal} data={marketDataArray} color='red' />}
             </div>
 
 
-            <div onClick={() => setfullWidth('yellow')} className={`yellow sidelinks ${fullSide && 'fullHeightSidebar'} ${test < 1 ? 'slide-in-top' : 'slide-in-top-final'} ${fullWidth == 'yellow' ? 'fullwidth total-display' : ''}`}><div className='sideletters'>文化 <div className="rotatedletter">Community</div></div></div>
+            <div onClick={() => setfullWidth('yellow')} className={`yellow sidelinks ${fullSide && 'fullHeightSidebar'} ${test < 1 ? 'slide-in-top' : 'slide-in-top-final'} ${fullWidth == 'yellow' ? 'fullwidth total-display' : 'cursor-pointer'}`}><div className='sideletters'>文化 <div className="rotatedletter">Community</div></div></div>
         </>
     )
 }
