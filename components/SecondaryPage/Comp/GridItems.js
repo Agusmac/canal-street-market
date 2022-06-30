@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react'
 
 const GridItems = ({ name, description, img, w, h, folder }) => {
 
-    console.log()
     const [random, setRandom] = useState(0)
     const [mouseOn, setMouseOn] = useState(false)
 
@@ -14,7 +13,6 @@ const GridItems = ({ name, description, img, w, h, folder }) => {
         }
     }, [mouseOn])
 
-    // max-width: 30vh;
     return (
         <div onMouseEnter={() => setMouseOn(true)}
             onMouseLeave={() => setMouseOn(false)} className='flex-md'>

@@ -4,8 +4,6 @@ import Footer from './Footer/Footer'
 import Navbar from './Navbar'
 
 
-
-
 const MainPage = ({ fullWidth, setfullWidth,setOpenModal}) => {
 
   const [mainDisplay, setMainDisplay] = useState(true)
@@ -36,9 +34,7 @@ const MainPage = ({ fullWidth, setfullWidth,setOpenModal}) => {
           </h1>
         </div>
         <div className='fade-in mb-120 mb-60-sm hero-img-div'>
-          <div>
-            {/* <Image src='/images/home-hero.avif' height={1956} width={2542} /> */}
-          </div>
+          <div></div>
         </div>
         {/*  */}
         <div >
@@ -117,11 +113,8 @@ const MainPage = ({ fullWidth, setfullWidth,setOpenModal}) => {
 
         </div>
         {/*  */}
-
         <Footer />
-
       </div>
-
     </div>
   )
 }
