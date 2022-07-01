@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
-
+import Swal from 'sweetalert2'
 
 const MainPage = ({ fullWidth, setfullWidth,setOpenModal}) => {
 
@@ -21,7 +21,15 @@ const MainPage = ({ fullWidth, setfullWidth,setOpenModal}) => {
     }
   }, [fullWidth])
 
-
+  function alert() {
+    Swal.fire({
+      title: 'This is not available, but you can check my linkedin',
+      icon: 'info',
+      confirmButtonText: 'Maybe later...',
+      footer: `<a href="https://www.linkedin.com/in/agustin-mac-rae-3348ab216/"
+       target="_blank" rel="noreferrer"> <div >LETS TALK!</div></a>`,
+    })
+  }
 
   return (
     <div id='Main-Page' onClick={() => setfullWidth('main')} className={`MainDiv ${fullWidth == 'main' ? 'fullwidth' : 'total-no-display-md cursor-pointer'}`}>
@@ -99,7 +107,7 @@ const MainPage = ({ fullWidth, setfullWidth,setOpenModal}) => {
             </div>
           </div>
 
-          <div className='white-button textcenter mx-auto mb-90 mb-60-sm cursor-pointer' style={{ backgroundColor: "white" }}>
+          <div className='white-button textcenter mx-auto mb-90 mb-60-sm cursor-pointer' onClick={alert} style={{ backgroundColor: "white" }}>
             see all
           </div>
 

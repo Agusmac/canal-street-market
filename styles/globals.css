@@ -173,10 +173,12 @@ select {
 .mt-15 {
   margin-top: 15px;
 }
-.pt-20{
+
+.pt-20 {
   padding-top: 120px;
 }
-.mt--120{
+
+.mt--120 {
   margin-top: -120px;
 }
 
@@ -199,7 +201,7 @@ select {
 }
 
 * {
-   /* Hide scrollbars */
+  /* Hide scrollbars */
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
@@ -208,10 +210,12 @@ select {
 }
 
 
+
+
 body {
   overflow: hidden;
   font-family: 'PT Mono', monospace;
- 
+
 }
 
 .fullwidth {
@@ -222,6 +226,7 @@ body {
 .display-md {
   display: none !important;
 }
+
 .mt--100 {
   margin-top: -110px;
 }
@@ -367,6 +372,6 @@ font-family: 'PT Mono', monospace; */
   display: unset !important;
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }

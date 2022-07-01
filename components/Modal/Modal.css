@@ -57,3 +57,29 @@
 .selected {
     border-bottom: 4px solid black !important;
 }
+
+.swal2-footer div {
+    margin: auto;
+    background-color: #ef4b6c;
+    border-radius: 30px;
+    width: 250px;
+    max-width: 60vw;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 700;
+    letter-spacing: 1.55px;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    text-align: center;
+  }
+  .swal2-title{
+    font-size: 25px !important;
+  }
+  .swal2-popup,.swal2-popup h2{
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  .swal2-confirm {
+    font-size: 17px !important;
+  }

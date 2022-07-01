@@ -8,6 +8,7 @@ import Navbar from '../Navbar/Navbar'
 
 const SecondaryPage = ({ fullWidth, color, setOpenModal, data }) => {
 
+  // if i leave this here it will do a bit of an animation, i use it on the (at the start of) useEffect it will work like the
   try { document.getElementById(`secondary-page`).scrollIntoView({ behavior: "smooth", block: "start" }) } catch (error) { console.log("failed") }
 
   const [Opened, setOpened] = useState(false)
