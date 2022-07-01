@@ -8,6 +8,8 @@ import YellowFeatures from './YellowFeatures'
 
 const YellowPage = ({ fullWidth, color, setOpenModal, data }) => {
 
+  try { document.getElementById(`secondary-page`).scrollIntoView({ behavior: "smooth", block: "start" }) } catch (error) { console.log("failed") }
+
   const [Opened, setOpened] = useState(false)
 
   useEffect(() => {
