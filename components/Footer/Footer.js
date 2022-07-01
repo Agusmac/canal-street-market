@@ -11,13 +11,14 @@ const Footer = ({ secFoot }) => {
         <div className='vendor-div'>
           <h4>Interested in becoming a vendor?</h4>
 
-          <div className='white-button mx-auto ' style={{ top: 0, padding: '15px' }}>click here</div>
+          <div className='white-button mx-auto cursor-pointer' style={{ top: 0, padding: '15px' }}>click here</div>
         </div>
       </div>
       {/*  */}
 
       <div className='mt-60 mb-60 flex main-grid textcenter soc-media-main-div'>
-        <div className='grid-center-content soc-media-div hover-pointed-anim'>
+
+        <div className='grid-center-content soc-media-div hover-pointed-anim cursor-pointer'>
           <div>
             <Image src='/images/pencil-icon.svg' alt='pencil-icon' height={29} width={29} />
             <p>Email us</p>
@@ -25,14 +26,14 @@ const Footer = ({ secFoot }) => {
         </div>
 
 
-        <div className='grid-center-content soc-media-div hover-pointed-anim'>
+        <div className='grid-center-content soc-media-div hover-pointed-anim cursor-pointer'>
           <div>
             <Image src='/images/facebook-icon.svg' alt='Facebook-icon' height={30} width={18} />
             <p>Follow us <br />on facebook</p>
           </div>
         </div>
 
-        <div className='grid-center-content soc-media-div hover-pointed-anim'>
+        <div className='grid-center-content soc-media-div hover-pointed-anim cursor-pointer'>
           <div>
             <Image src='/images/instagram-icon.svg' alt='Instagram-icon' height={25} width={25} />
             <p>Follow us <br />on instagram</p>

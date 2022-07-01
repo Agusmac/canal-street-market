@@ -26,8 +26,6 @@
 
 .sdsh h2 {
     font-size: 65px;
-    /* top: -12px;
-    left: -3px; */
 }
 
 .sdsh div:nth-child(1) {
@@ -36,9 +34,6 @@
 
 .sdsh div:nth-child(2) {
     flex: 1 1;
-    /* position: relative;
-    top: -60px; */
-    /* background-color: aqua; */
 }
 
 .sdsh div div {
@@ -118,13 +113,6 @@
     animation: 1s infinite alternate d;
     animation-timing-function: ease-in-out;
 }
- /* @media (max-width:1800px) {
-    .xl-title-fix h1{
-        font-size: 140px;
-        line-height: 0.85;
-    }
-} */
-
 
 .no-display-to-flex{
     display: none !important;
@@ -157,10 +145,7 @@
     .flex-md div {
         flex: 1;
     }
-    /* .md-mw-22vw{
-        display: grid;
-        place-content: center;
-    } */
+
     .md-mw-22vw {
         max-width: 20vw;
         position: relative;

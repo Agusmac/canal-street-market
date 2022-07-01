@@ -194,12 +194,12 @@ select {
   display: grid;
 }
 
-
 ::-webkit-scrollbar {
   display: none;
 }
 
 * {
+   /* Hide scrollbars */
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
@@ -208,25 +208,16 @@ select {
 }
 
 
-
-
-
 body {
   overflow: hidden;
   font-family: 'PT Mono', monospace;
-  /* Hide scrollbars */
+ 
 }
 
 .fullwidth {
   width: calc(100% - 180px) !important;
 }
 
-/* ??????????????????? which one was for which ? */
-/* 
-
-.fullwidth {
-  width: 100% !important;
-} */
 
 .display-md {
   display: none !important;
@@ -255,8 +246,6 @@ body {
   .total-no-display-md {
     display: none;
   }
-
-
 }
 
 @media (max-width:1000px) {
@@ -297,9 +286,6 @@ h4 {
 /* font-family: 'Cormorant Garamond', serif;
 
 font-family: 'PT Mono', monospace; */
-
-
-
 
 
 /* really specific */
@@ -358,9 +344,7 @@ font-family: 'PT Mono', monospace; */
   .none-760px {
     display: none;
   }
-
 }
-
 
 .mt-22 {
   margin-top: 22px;
@@ -378,7 +362,6 @@ font-family: 'PT Mono', monospace; */
 .total-no-display {
   display: none;
 }
-
 
 .total-display {
   display: unset !important;

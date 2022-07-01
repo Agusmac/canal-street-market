@@ -11,7 +11,7 @@ const YellowFeatures = () => {
                 </div>
                 <div>
                     <div className='y-bg bg-img-div-2'></div>
-                    <div className="textdiv"><h3>CSM Community - Joe's Rice Rolls</h3></div>
+                    <div className="textdiv"><h3>CSM Community - Joe&apos;s Rice Rolls</h3></div>
                 </div>
             </div>
             <br />

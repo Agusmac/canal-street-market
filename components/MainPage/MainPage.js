@@ -1,10 +1,12 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import Footer from './Footer/Footer'
-import Navbar from './Navbar'
+import Footer from '../Footer/Footer'
+import Navbar from '../Navbar/Navbar'
 
 
 const MainPage = ({ fullWidth, setfullWidth,setOpenModal}) => {
+
+
 
   const [mainDisplay, setMainDisplay] = useState(true)
 
@@ -15,13 +17,14 @@ const MainPage = ({ fullWidth, setfullWidth,setOpenModal}) => {
       }, 700);
     } else {
       setMainDisplay(true)
+      try { document.getElementById(`Main-Page`).scrollIntoView({ behavior: "smooth", block: "start" }) } catch (error) { console.log("failed") }
     }
   }, [fullWidth])
 
 
 
   return (
-    <div onClick={() => setfullWidth('main')} className={`MainDiv ${fullWidth == 'main' ? 'fullwidth' : 'total-no-display-md cursor-pointer'}`}>
+    <div id='Main-Page' onClick={() => setfullWidth('main')} className={`MainDiv ${fullWidth == 'main' ? 'fullwidth' : 'total-no-display-md cursor-pointer'}`}>
       <Navbar fullWidth={fullWidth} setOpenModal={setOpenModal}  />
 
       <div className={`fix  ${fullWidth != 'main' && 'op-0 '}${!mainDisplay && 'total-no-display'}`}>
@@ -96,7 +99,7 @@ const MainPage = ({ fullWidth, setfullWidth,setOpenModal}) => {
             </div>
           </div>
 
-          <div className='white-button textcenter mx-auto mb-90 mb-60-sm' style={{ backgroundColor: "white" }}>
+          <div className='white-button textcenter mx-auto mb-90 mb-60-sm cursor-pointer' style={{ backgroundColor: "white" }}>
             see all
           </div>
 

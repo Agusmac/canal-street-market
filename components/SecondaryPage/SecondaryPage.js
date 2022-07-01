@@ -4,12 +4,9 @@ import SecondaryPageHero from './Comp/SecondaryPageHero'
 import MenuGrid from './Comp/MenuGrid'
 import HappyHour from './Comp/HappyHour'
 import Footer from '../Footer/Footer'
-import Navbar from '../Navbar'
-// import { foodDataArray } from '../../data'
+import Navbar from '../Navbar/Navbar'
 
 const SecondaryPage = ({ fullWidth, color, setOpenModal, data }) => {
-
-  // console.log(data);
 
   try { document.getElementById(`secondary-page`).scrollIntoView({ behavior: "smooth", block: "start" }) } catch (error) { console.log("failed") }
 
@@ -21,8 +18,7 @@ const SecondaryPage = ({ fullWidth, color, setOpenModal, data }) => {
         setOpened(true)
       }, 800);
     }
-
-  }, [fullWidth])
+  }, [fullWidth,color])
 
   return (
     <div id='secondary-page' className={`Secondary-page ${fullWidth == color && 'fix'} ${Opened && 'op-1'} `}>

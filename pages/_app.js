@@ -1,7 +1,7 @@
 import '../styles/globals.css'
-import '../styles/Sidebar.css'
-import '../styles/MainPage.css'
-import '../styles/Navbar.css'
+import '../components/Sidebar/Sidebar.css'
+import '../components/MainPage/MainPage.css'
+import '../components/Navbar/Navbar.css'
 import '../styles/Animation.css'
 import '../components/Footer/Footer.css'
 import '../components/SecondaryPage/SecondaryPage.css'
@@ -10,8 +10,6 @@ import  '../components/YellowPage/Yellow.css'
 import Head from 'next/head'
 
   
-
-
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} >
         <Head>

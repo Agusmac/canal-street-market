@@ -12,34 +12,48 @@
 }
 
 
-.bg-lightblue{
+.bg-lightblue {
     background-color: #5ea3ec;
     transition: opacity 3s !important;
 }
-.bg-red{
+
+.bg-red {
     background-color: #f64444;
     transition: opacity 3s !important;
 }
-.bg-yellow{
+
+.bg-yellow {
     background-color: #ffb400;
 }
 
 
 .modal .flex div {
     flex: 1;
- display: grid;
- place-content: center;
+    display: grid;
+    place-content: center;
 }
 
-.h-45vh {
-    height: 45vh;
+.h-50vh {
+    height: 50vh;
 }
+
 .h-10vh {
     height: 10vh;
 }
-.rot-45-left{
+
+.rot-45-left {
     transform: rotate(-45deg);
 }
-.rot-45-right{
+
+.rot-45-right {
     transform: rotate(45deg);
+}
+
+.modal p {
+    border-bottom: 4px solid transparent;
+    transition: none;
+}
+
+.selected {
+    border-bottom: 4px solid black !important;
 }

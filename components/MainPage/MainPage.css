@@ -25,21 +25,10 @@
     animation-timing-function: linear;
 }
 
-.hero-img-div {
-    /* max-height: 1000px;
-    overflow: hidden;
-    position: relative; */
-}
-
 .hero-img-div div {
     height: clamp(400px, 50vw, 1000px);
-    /* max-height: 1000px;
-    height: 50vw;
-    min-height: 400px; */
     background: no-repeat center/cover url("/images/home-hero.avif");
 }
-
-
 
 
 .main-second-title {
@@ -94,7 +83,6 @@
 }
 
 
-
 .date {
     font-size: 14px !important;
 }
@@ -117,7 +105,6 @@
 
 /*  */
 
-
 .location-subdiv {
     position: relative;
     font-size: 55px;
@@ -135,12 +122,10 @@
 }
 
 
-
 @media (max-width:1200px) {
     .fix {
         width: 100%
     }
-
 }
 
 @media (max-width:760px) {
@@ -162,7 +147,6 @@
         max-width: 250px;
     }
 
-
     .side-anim-sm {
         background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0);
         background-position: 0 100%, 0 calc(100% - 14px);
@@ -171,12 +155,9 @@
         padding: 60px 20px;
     }
 
-
-
     .main-grid {
         flex-direction: column;
     }
-
 
     .sideline-animation {
         animation: unset;
@@ -199,33 +180,3 @@
 }
 
 
-
-@keyframes c {
-    0% {
-        background-position-x: 0, 0
-    }
-
-    to {
-        background-position-x: 24px, -24px
-    }
-}
-
-@keyframes b {
-    0% {
-        background-position-x: 0, 2px
-    }
-
-    to {
-        background-position-x: 17px, 19px
-    }
-}
-
-@keyframes a {
-    0% {
-        background-position: 0 0, 0 100%, 0 0, 100% 0
-    }
-
-    to {
-        background-position: 30px 0, -30px 100%, 0 -30px, 100% 30px
-    }
-}

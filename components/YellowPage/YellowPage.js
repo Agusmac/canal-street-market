@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Footer from '../Footer/Footer'
-import Navbar from '../Navbar'
+import Navbar from '../Navbar/Navbar'
 import HappyHour from '../SecondaryPage/Comp/HappyHour'
 import SecondaryPageHero from '../SecondaryPage/Comp/SecondaryPageHero'
 import YellowFeatures from './YellowFeatures'
@@ -18,7 +18,7 @@ const YellowPage = ({ fullWidth, color, setOpenModal, data }) => {
         setOpened(true)
       }, 800);
     }
-  }, [fullWidth])
+  }, [fullWidth,color])
 
 
   return (

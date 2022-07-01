@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react'
-import MainPage from '../components/MainPage'
-import Sidebar from '../components/Sidebar'
+import MainPage from '../components/MainPage/MainPage'
+import Sidebar from '../components/Sidebar/Sidebar'
 
 import Head from 'next/head'
 import Modal from '../components/Modal/Modal'
@@ -11,15 +11,7 @@ export default function Home() {
   const [fullWidth, setfullWidth] = useState('main')
 
   const [openModal, setOpenModal] = useState(false)
-  
-  // when switching back to main-page, should it scroll to the top or is it better to keep
-  //  it a the height it was on the sidebar
 
-    // useEffect(() => {
-    //   if(fullWidth=='main'){
-    //     try { document.querySelector(`.MainDiv`).scrollIntoView({ behavior: "smooth", block: "start" })} catch (error) {console.log("failed")}
-    //   }
-    // }, [fullWidth])
 
   return (
       <>
@@ -43,7 +35,7 @@ export default function Home() {
 
 
 
-
+// this should give moouse-drag functionality for people without a wheel on their mouse(or too much of a dummie?)
 
 //   useEffect(() => {
 //     const ele = document.querySelector('.MainDiv');
