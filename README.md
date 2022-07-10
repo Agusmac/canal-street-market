@@ -1,6 +1,6 @@
 # Canal Street Market
 
-Check the live site on [Netlify](https://canal-street-market.vercel.app/)
+Check the live site on [Vercel](https://canal-street-market.vercel.app/)
 
 ## Tech used
 
