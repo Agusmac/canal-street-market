@@ -13,7 +13,7 @@ import Head from 'next/head'
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} >
         <Head>
-        <meta name="google-site-verification" content="SOPUd6mBzAIrfFMNsjn0yW4WggEpMc43Sq2-WZdR9NY" />
+     
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         {/* <link rel="shortcut icon" href="/images/site/lobster.jpg" /> */}
       </Head>
