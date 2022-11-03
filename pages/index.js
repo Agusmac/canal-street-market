@@ -17,7 +17,7 @@ export default function Home() {
       <>
         <Head>
           <title>Canal-Street-Market | Agustin</title>
-          <meta name="google-site-verification" content="SOPUd6mBzAIrfFMNsjn0yW4WggEpMc43Sq2-WZdR9NY" />
+          <meta name="google-site-verification" content="XrMawP8XNqokj3VQli08ICDbANKvtTPzU6BM8n_n5qk" />
           <meta name='description' content="This site was made by Agustin Mac Rae-Frontend Developer" />
       </Head>
     <div>
